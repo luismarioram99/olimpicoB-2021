@@ -17,10 +17,13 @@ class UnefectiveVector1{
       processCount = 0;
     }
 
+    // [0, 1, 2], *, *, *, *, *, *,
+
+
     void push_back(int _value){
 
       if(last+1 == size){
-
+        
         int *temp = new int[size+1];
         processCount++;
 
@@ -67,11 +70,11 @@ int main(){
   cin >> count;
 
   for (int i = 0; i < count; i++){
+    v1.resize();
     for (int j = 0; j < i; j++){
       v1.push_back(rand());
     }
     cout << v1.count() << endl;
-    v1.resize();
   }
 
   return 0;

@@ -63,7 +63,7 @@ class Efective{
       array = new int[1];
     }
 
-     void resize(int _size){
+    void resize(int _size){
       size = _size;
       last = 0;
       array = new int[size];
